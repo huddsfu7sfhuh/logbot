@@ -5,7 +5,7 @@ const Canvas = require("canvas");
 const jimp = require("jimp");
    let points = {}
    
-const prefix = '#'
+const prefix = '@'
   client.on('message', message => {
     if(message.author.bot) return;
             if (!points[message.author.id]) points[message.author.id] = {
