@@ -62,19 +62,10 @@ const client = new Discord.Client();
  
  
  
-  client.on('ready',async () => {
-    sendReady('your id', `**__ تـم تـشـغـيـل الـبـوت بـنـجـاح , Brodcast Bot | Owner Bot : SoM # 1100__**`);
-     
-    function sendReady(channel, message) {
-      client.channels.get(channel).send(message);
-      console.log(message);
-    }
-  });
- 
- 
-          client.on('ready', () => {
-              client.user.setActivity("BroadCast",{type: 'WATCHING'});
-         
-         });
+ client.on('ready', () => {
+  console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`BroadCast`,"http://twitch.tv/X_Xz")
+client.user.setStatus("Online")
+});
 
 client.login(process.env.BOT_TOKEN); 
