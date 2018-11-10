@@ -73,7 +73,7 @@ const client = new Discord.Client();
  
  
           client.on('ready', () => {
-              client.user.setActivity("Taino .",{type: 'playing'});
+              client.user.setActivity("BroadCast",{type: 'WATCHING'});
          
          });
 
